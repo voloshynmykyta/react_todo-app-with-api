@@ -20,6 +20,7 @@ export const App: React.FC = () => {
   const [needsRefocus, setNeedsRefocus] = useState(false);
   const focusedInput = useRef<HTMLInputElement>(null);
   const timeOutRef = useRef<NodeJS.Timeout>();
+  // comment to restart test pipeline
 
   const AllFilters: Record<Filters, (td: Todo) => boolean> = useMemo(() => {
     return {
